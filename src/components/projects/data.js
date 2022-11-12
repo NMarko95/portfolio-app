@@ -15,7 +15,7 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Foor Ordering App",
+    title: "Food Ordering App",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat voluptatibus beatae, quod iusto laboriosam voluptatum suscipit fugit accusantium inventore maxime facere sint perferendis. Quae debitis deleniti aliquam totam! Nam, beatae!",
     link: "https://www.twitter.com/",

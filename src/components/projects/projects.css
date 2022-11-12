@@ -1,0 +1,11 @@
+.projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e8eced;
+}
+
+.projects > h2{
+    margin-top: 70px;
+}

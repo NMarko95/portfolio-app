@@ -1,29 +1,35 @@
 import "./navbar.css";
 
-const Navbar = () => {
-  const handleSelected = (e) => {
-    const links = document.querySelectorAll(".navbar-ul");
-    links.forEach((link) => {
-      if (link.classList.contains("selected"))
-        link.classList.remove("selected");
-    });
-    e.classList.add("selected");
-  };
-
+const Navbar = ({ handleSelected }) => {
   return (
     <div className="navbar">
-      <div className="navbar-logo">Logo</div>
+      <div className="navbar-logo">Marko Nikolic</div>
       <nav className="navbar-links">
         <ul
           className="navbar-ul selected"
-          onClick={(e) => handleSelected(e.target)}
+          onClick={(e) => {
+            handleSelected(e.target, true);
+          }}
+          name="about"
         >
           About
         </ul>
-        <ul className="navbar-ul" onClick={(e) => handleSelected(e.target)}>
+        <ul
+          className="navbar-ul"
+          name="projects"
+          onClick={(e) => {
+            handleSelected(e.target, true);
+          }}
+        >
           Projects
         </ul>
-        <ul className="navbar-ul" onClick={(e) => handleSelected(e.target)}>
+        <ul
+          className="navbar-ul"
+          name="contact"
+          onClick={(e) => {
+            handleSelected(e.target, true);
+          }}
+        >
           Contact
         </ul>
       </nav>
